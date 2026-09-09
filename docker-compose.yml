@@ -1,0 +1,16 @@
+services:
+  secure-inquiry:
+    build: .
+    container_name: secure-inquiry
+    ports:
+      - "${PORT:-3000}:3000"
+    environment:
+      - PORT=3000
+      - DB_FILE=/data/mockDb.json
+      - AUDIT_ENCRYPTION_KEY=${AUDIT_ENCRYPTION_KEY}
+    volumes:
+      - secure-inquiry-data:/data
+    restart: unless-stopped
+
+volumes:
+  secure-inquiry-data:

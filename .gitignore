@@ -1,0 +1,12 @@
+# Environment secrets
+.env
+
+# Dependencies
+node_modules
+
+# Runtime data
+data
+mockDb.json
+
+# OS files
+.DS_Store
