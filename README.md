@@ -2,6 +2,14 @@
 
 A small Node.js/Express middleware service that sanitizes incoming messages, simulates an external AI call, writes an encrypted audit log, and protects the mock AI call with a circuit breaker.
 
+## Demo
+
+Watch the project in action:
+
+[![Secure Inquiry Service demo](https://img.youtube.com/vi/p-KjiJy_aug/hqdefault.jpg)](https://youtu.be/p-KjiJy_aug)
+
+Direct link: https://youtu.be/p-KjiJy_aug
+
 ## Quick start
 
 Make sure you have Node.js 20+ installed, then install dependencies:
